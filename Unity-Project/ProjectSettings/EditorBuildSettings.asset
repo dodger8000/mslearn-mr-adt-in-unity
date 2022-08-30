@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 0
@@ -23,7 +23,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Supporting Scenes/ModuleStartScenes/Final_CompletedScene.unity
     guid: 34300c868fed7a443b2203d70a848b30
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/CompletedScene.unity
     guid: 9b525369e7b672e44b91a2da80a9fa11
   m_configObjects:

@@ -1,9 +1,9 @@
-param projectName string = ''
-param userId string = ''
-param appRegObjectId string = ''
+param projectName string = 'adtwindfarm01'
+param userId string = 'da38f5ea-c05e-488c-98aa-240b115997c0'
+param appRegObjectId string = 'd297fdbd-a50e-4c69-9bf7-0b13fba1bc46'
 param utcValue string = utcNow()
 
-var location = resourceGroup().location
+var location = 'eastus'
 
 var unique = substring(uniqueString(resourceGroup().id),3)
 //var unique = ''
@@ -330,7 +330,7 @@ resource ADTRoleDefinitionAppReg 'Microsoft.Authorization/roleAssignments@2018-0
 // execute post deployment script
 resource PostDeploymentscript 'Microsoft.Resources/deploymentScripts@2020-10-01' = {
   name: 'PostDeploymentscript'
-  location: resourceGroup().location
+  location: location
   kind: 'AzureCLI'
   identity: {
     type: 'UserAssigned'
